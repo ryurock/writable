@@ -1,32 +1,22 @@
 {
-  "name": "writable",
+  "name": "electron-monaco-editor-sample",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/main/index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "webpacke:watch": "webpack --progress --colors --watch",
-    "electron": "electron . "
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "electron .",
+    "pack": "electron-packager . sample --out=dist --arch=x64 --platform=win32 --version=1.7.5 --overwrite --prune --ignore=dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ryurock/writable.git"
-  },
-  "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ryurock/writable/issues"
-  },
-  "homepage": "https://github.com/ryurock/writable#readme",
+  "license": "MIT",
   "devDependencies": {
-    "electron": "^5.0.5",
-    "ts-loader": "^6.0.4",
-    "typescript": "^3.5.2",
-    "webpack": "^4.35.0",
-    "webpack-cli": "^3.3.5"
+    "electron": "^1.7.5",
+    "electron-packager": "^9.0.1",
+    "typescript": "^2.5.2"
   },
   "dependencies": {
-    "monaco-editor": "^0.17.1"
+    "monaco-editor": "^0.10.0"
   }
 }
