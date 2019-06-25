@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+      "target": "es5",
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "outDir": "",
+      "lib": [
+          "dom",
+          "es5",
+          "scripthost",
+          "es2015.promise",
+          "es2015.collection"
+      ],
+  }
+}
