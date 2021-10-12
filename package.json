@@ -12,7 +12,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^1.7.5",
+    "electron": "^11.5.0",
     "electron-packager": "^9.0.1",
     "typescript": "^2.5.2"
   },
